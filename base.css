@@ -14,21 +14,23 @@ footer{
 
 }
 
-* {
-  box-sizing: border-box;
-}
 /* box-sizing - property defines how the width and
 height of an element are calculated:
 should they include padding and borders,
 or not */
 
+* {
+  box-sizing: border-box;
+}
+
+/* if 'col-' in class name do:*/
 [class*="col-"] {
   float: left;
   padding: 15px;
   border: 1px solid red;
 }
 
-/* For desktop: */
+/* Grid view for desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -42,7 +44,7 @@ or not */
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* For mobile phones: */
+/* Grid view for mobile phones: */
 @media only screen and (max-width: 768px) {
   [class*="col-"] {
     width: 100%;
