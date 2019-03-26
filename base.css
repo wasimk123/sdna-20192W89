@@ -1,17 +1,20 @@
 header{
-
+background-color: coral;
+height:200px;
 }
 
 aside{
-
+left:0;
+background-color: orange;
 }
 
 main{
-
+background-color: blue;
 }
 
 footer{
-
+height:200px;
+background-color: pink;
 }
 
 /* BOX-SIZING - property defines how the width and
