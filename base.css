@@ -74,11 +74,12 @@ li ~ nav {
   a li {
       text-decoration: none;
       color: #fff;
+      transition: .3s background-color;
     }
   nav a:hover {
       background-color: #005f5f;
     }
-   transition: .3s background-color;
+  
  a.active {
       background-color: #fff;
       color: #444;
