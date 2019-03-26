@@ -14,7 +14,7 @@ footer{
 
 }
 
-/* box-sizing - property defines how the width and
+/* BOX-SIZING - property defines how the width and
 height of an element are calculated:
 should they include padding and borders,
 or not */
@@ -23,14 +23,14 @@ or not */
   box-sizing: border-box;
 }
 
-/* if 'col-' in class name do:*/
+/* IF 'col-' IN CLASS NAME DO:*/
 [class*="col-"] {
   float: left;
   padding: 15px;
   border: 1px solid red;
 }
 
-/* Grid view for desktop: */
+/* GRID VIEW FOR DESKTOP: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -44,8 +44,40 @@ or not */
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* Grid view for mobile phones: */
+/* GRID VIEW FOR MOBILE PHONE */
 @media only screen and (max-width: 768px) {
   [class*="col-"] {
     width: 100%;
   }
+
+/* NAV BAR DESIGN */
+ul ~ nav {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+ 
+li ~ nav {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  }
+  
+  a li {
+      text-decoration: none;
+      color: #fff;
+    }
+  nav a:hover {
+      background-color: #005f5f;
+    }
+   transition: .3s background-color;
+ a.active {
+      background-color: #fff;
+      color: #444;
+    }
+  /* END OF NAV DESIGN*/
