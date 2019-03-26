@@ -1,21 +1,48 @@
-header{
-background-color: coral;
-height:200px;
+body{
+	margin: 0;
+	padding: 0;
+	background: #ccc;
 }
 
-aside{
-left:0;
-background-color: orange;
+/* NAV BAR DESIGN */
+
+nav ul {
+	list-style: none;
+	background-color: #444;
+	text-align: center;
+	padding: 0;
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
 }
 
-main{
-background-color: blue;
+nav li {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #888;
+	float: left;
+	padding-left: 103px;
+	padding-right: 103px;
 }
 
-footer{
-height:200px;
-background-color: pink;
+nav a {
+	text-decoration: none;
+	color: #fff;
 }
+
+nav li:hover {
+	background-color: #005f5f;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+/* END OF NAV DESIGN*/
+
+
 
 /* BOX-SIZING - property defines how the width and
 height of an element are calculated:
@@ -53,35 +80,4 @@ or not */
     width: 100%;
   }
 
-/* NAV BAR DESIGN */
-ul ~ nav {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
- 
-li ~ nav {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
-  display: inline-block;
-  }
-  
-  a li {
-      text-decoration: none;
-      color: #fff;
-      transition: .3s background-color;
-    }
-  nav a:hover {
-      background-color: #005f5f;
-    }
-  
- a.active {
-      background-color: #fff;
-      color: #444;
-    }
-  /* END OF NAV DESIGN*/
+
