@@ -55,7 +55,7 @@ or not */
 
 /* IF 'col-' IN CLASS NAME DO:*/
 [class*="col-"] {
-  float: left;
+  float: right;
   padding: 15px;
   border: 1px solid red;
 }
@@ -81,3 +81,6 @@ or not */
   }
 
 
+#about_main{
+	margin:auto;
+}
