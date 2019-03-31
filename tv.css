@@ -57,7 +57,6 @@ or not */
 [class*="col-"] {
   float: right;
   padding: 15px;
-  border: 1px solid red;
 }
 
 /* GRID VIEW FOR DESKTOP: */
@@ -80,4 +79,12 @@ or not */
     width: 100%;
   }
 
+/* end of base */
 
+main{
+	margin:0 auto;
+}
+
+h2{
+	margin:0 auto;
+}
