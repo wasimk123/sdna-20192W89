@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+}
+
+/* NAV BAR DESIGN */
+
+nav ul {
+	list-style: none;
+	background-color: #444;
+	text-align: center;
+	padding: 0;
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+
+nav li {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #888;
+	float: right;
+	padding-left:68px;
+	padding-right: 68px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav li:hover {
+	background-color: #005f5f;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+/* END OF NAV DESIGN*/
+
+
+
+/* BOX-SIZING - property defines how the width and
+height of an element are calculated:
+should they include padding and borders,
+or not */
+
+* {
+  box-sizing: border-box;
+}
+
+/* IF 'col-' IN CLASS NAME DO:*/
+[class*="col-"] {
+  float: right;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+/* GRID VIEW FOR DESKTOP: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* GRID VIEW FOR MOBILE PHONE */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+
+
