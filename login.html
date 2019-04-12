@@ -8,6 +8,8 @@
 <!-- link html file to css style sheet -->
 <link rel="stylesheet" type="text/css" href="login.css">
 
+<!-- link to js file -->
+<script src ="js.js"></script>
 <title>יעקב כהן - משרד גישור</title>
 </head>
 
@@ -15,7 +17,7 @@
 
 <nav>
       <ul>
-        <li><a href="home.html">דף בית</a></li>
+        <li onclick="clk_home()">דף בית</li>
         <li><a href="set_appointment.html">קבע פגישה</a></li>
         <li><a href="login.html">הרשמה</a></li>
         <li><a href="tv.html">ראיונות ופסקי דין</a></li>
@@ -24,13 +26,15 @@
       </ul>
     </nav>
 
-<aside></aside>
+<aside class="col-3"></aside>
 
 <main>
   <div class="col-6" style="text-align:center;">
 	<div class="container" style="display:inline-block;">
 		<h1>נא בצע רישום </h1>
 		<h5>** יש להזין פרטים באנגלית בלבד! **</h5>
+
+		<!-- php login -->
 		<form action="login.php" method="post" id="form">
 			<section class="col">
 				<P><label>שם פרטי:<input type="text" placeholder="אנא הזן את שמך הפרטי" name="fname" required></label>
@@ -39,8 +43,7 @@
 				<label>טלפון:<input type="tel" placeholder="אנא הזן מספר טלפון" name="phone" ></label></p>		
 				<p><label>אימייל:<input type="email" placeholder="אנא הזן כתובת אימייל" name="email" ></label>
 				<label>סיסמה:<input type="password" placeholder="אנא בחר סיסמה אישית" name="password" ></label></p>			
-			
-			
+
 			<input type="submit" value="הירשם" name="submit" id="submit">
 			<input type="reset" value="איפוס" name="reset" id="reset">
 		</section>
