@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="He" dir="rtl">
 <head>
 
 <!-- The viewport is the user's visible area of a web page -->
@@ -15,11 +15,11 @@
 
 <nav>
       <ul>
-        <li><a href="index.html">דף בית</a></li>
-        <li><a href="#">קבע פגישה</a></li>
-        <li><a href="#">הרשמה</a></li>
-        <li><a href="#">ראיונות ופסקי דין</a></li>
-        <li><a href="#">אודותינו</a></li>
+        <li><a href="home.html">דף בית</a></li>
+        <li><a href="set_appointment.html">קבע פגישה</a></li>
+        <li><a href="login.html">הרשמה</a></li>
+        <li><a href="tv.html">ראיונות ופסקי דין</a></li>
+        <li><a href="about.html">אודותינו</a></li>
 		<li><a href="mailto:mediator@gmail.com">צור קשר</a></li>
       </ul>
     </nav>
@@ -27,7 +27,26 @@
 <aside></aside>
 
 <main>
-<h1>הרשמה</h1>
+  <div class="col-6" style="text-align:center;">
+	<div class="container" style="display:inline-block;">
+		<h1>נא בצע רישום </h1>
+		<h5>** יש להזין פרטים באנגלית בלבד! **</h5>
+		<form action="login.php" method="post" id="form">
+			<section class="col">
+				<P><label>שם פרטי:<input type="text" placeholder="אנא הזן את שמך הפרטי" name="fname" required></label>
+				<label>שם משפחה:<input type="text" placeholder="אנא הזן את שם משפחתך" name="lname" required></label></p>
+				<p><label>שם משתמש:<input type="text" placeholder="אנא בחר שם משתמש אישי" name="uname" ></label>
+				<label>טלפון:<input type="tel" placeholder="אנא הזן מספר טלפון" name="phone" ></label></p>		
+				<p><label>אימייל:<input type="email" placeholder="אנא הזן כתובת אימייל" name="email" ></label>
+				<label>סיסמה:<input type="password" placeholder="אנא בחר סיסמה אישית" name="password" ></label></p>			
+			
+			
+			<input type="submit" value="הירשם" name="submit" id="submit">
+			<input type="reset" value="איפוס" name="reset" id="reset">
+		</section>
+		</form>
+	</div>	
+  </div>
 
 </main>
 
