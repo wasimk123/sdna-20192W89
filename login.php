@@ -24,7 +24,7 @@
 			$phone=$_POST["phone"];
 			$email=$_POST["email"];
 			
-			$sql2="INSERT INTO myMembers (username, firstname, lastname, password, phone, email) VALUES ('".$uname."','".$fname."','".$lname.",'".$pword."','".$phone."','".$email."')";
+			$sql2="INSERT INTO myMembers (username, firstname, lastname, password, phone, email) VALUES ('".$uname."','".$fname."','".$lname."','".$pword."','".$phone."','".$email."')";
 			$conn->query($sql2);
 			$conn->query($sql3); 
 			$result = $conn->query($sql);
