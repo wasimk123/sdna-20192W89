@@ -22,8 +22,6 @@
 						echo "LOGIN FAILED";
 					}
 					else{
-					    echo "LOGIN SUCCESSFULL!!@#$!@$!@$1";
-					    sleep(2); 
 						header("location: home.html");
 					}
 				}
