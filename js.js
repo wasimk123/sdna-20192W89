@@ -5,8 +5,8 @@
 	  location.replace("home.html")
 	}
 
-	function clk_login(){
-	  location.replace("login.html")
+	function clk_sign_up(){
+	  location.replace("sign_up.php")
 	}
 
 	function clk_appointment(){
